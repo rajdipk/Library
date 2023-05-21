@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Registry</title>
+    <link rel="stylesheet" type="text/css" href="library.css">
+
+</head>
+
+<body>
+    <h1>Book Registry</h1>
+
+    <div class="input-group">
+        <label for="name">Name of Book:</label>
+        <input type="text" id="name" placeholder="Enter the name of the book">
+    </div>
+
+    <div class="input-group">
+        <label for="author">Name of Author:</label>
+        <input type="text" id="author" placeholder="Enter the name of the author">
+    </div>
+
+    <div class="input-group">
+        <label for="publishDate">Publish Date:</label>
+        <input type="text" id="publishDate" placeholder="Enter the publish date">
+    </div>
+
+    <div class="input-group">
+        <input type="button" value="Add Book" onclick="addBook()">
+    </div>
+
+    <div class="input-group">
+        <label for="searchName">Search Book:</label>
+        <input type="text" id="searchName" placeholder="Enter the name of the book to search">
+    </div>
+
+    <div class="input-group">
+        <input type="button" value="Search" onclick="searchBook()">
+    </div>
+
+    <div class="input-group">
+        <input type="button" value="Total Books" onclick="totalBooks()">
+        <!-- Add this code where you want the logout button to appear -->
+
+    </div>
+
+    <div>
+        <form id="searchForm"><label for="searchForm"> Search OpenLibrary:</label>
+            <input type="text" id="searchQuery" placeholder="Enter book title">
+            <button type="submit">Search</button>
+        </form>
+        <br>
+        <button id="logoutButton">Logout</button>
+        <br>
+
+        <div id="searchResults"></div>
+
+    </div>
+
+    <div class="result" id="result"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="library.js"></script>
+
+</body>
+
+</html>
